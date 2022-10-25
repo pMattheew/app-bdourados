@@ -1,9 +1,33 @@
-<ion-content class="relative" fullscreen="true">
+<ion-content class="relative">
   <video
-    src="../../../assets/introAppHD.webm"
+    src="../../../assets/landing-video.webm"
     loop
     webkit-playsinline
     playsinline
-    class="h-full absolute -z-10 box-border translate-center"
+    class="h-full absolute -z-10 box-border translate-center object-cover"
   ></video>
+
+  <div class="w-full h-full absolute z-0 top-0 left-0 inset-shadow"></div>
+
+  <ion-img
+    src="../../../assets/logo-no-bkg.svg"
+    class="h-1/4 mt-[30vh] logo-drop-shadow"
+  ></ion-img>
+
+  <div
+    class="w-full h-[12vh] absolute bottom-0 z-0 bg-gradient-to-t from-black to-transparent"
+  ></div>
 </ion-content>
+
+<ion-footer
+  class="w-fit mb-6 items-center absolute bottom-0 flex flex-col ion-no-border translate-center-x"
+>
+  <ion-button fill="solid" shape="round" class="w-5/6 font-semibold"
+    >LOGIN</ion-button
+  >
+  <a
+    href="/home"
+    class="mt-1 font-body whitespace-nowrap text-center opacity-70"
+    >entrar sem login</a
+  >
+</ion-footer>
