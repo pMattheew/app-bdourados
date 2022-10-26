@@ -1,0 +1,54 @@
+<ion-item
+  class="w-3/4 h-12 mt-16 mb-0 mx-auto relative overflow-visible"
+  style="
+    --border-radius: 24px;
+    --highlight-background: var(--ion-color-primary) !important;
+  "
+>
+  <ion-label class="absolute -top-8 text-[1.1rem]" position="stacked"
+    >Número ou e-mail</ion-label
+  >
+  <ion-input
+    type="email"
+    inputmode="email"
+    placeholder="dourados@gmail.com"
+    autofocus="true"
+    [(ngModel)]="email"
+  ></ion-input>
+</ion-item>
+
+<ion-item
+  class="w-3/4 h-12 mt-8 mb-12 mx-auto relative overflow-visible"
+  style="
+    --border-radius: 24px;
+    --highlight-background: var(--ion-color-primary) !important;
+  "
+>
+  <ion-label class="absolute -top-8 text-[1.1rem]" position="stacked"
+    >Senha</ion-label
+  >
+  <ion-input
+    type="password"
+    inputmode="password"
+    placeholder="••••••••"
+    [(ngModel)]="password"
+  ></ion-input>
+</ion-item>
+
+<a class="block w-2/5 my-0 mx-auto ion-no-border relative whitespace-nowrap opacity-70" href="cadastro">
+  não tem cadastro? <br />
+  <span style="color: var(--ion-color-primary)">faça o seu!</span>
+  <ion-icon
+    class="absolute left-[90%] translate-center-y text-3xl"
+    name="chevron-forward-outline"
+    color="primary"
+  ></ion-icon>
+</a>
+
+<ion-button
+  class="mt-4 relative translate-center-x"
+  fill="outline"
+  shape="round"
+>
+  FAZER LOGIN
+</ion-button>
